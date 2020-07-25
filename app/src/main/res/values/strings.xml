@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Птички</string>
+    <string name="buttonForward1">Следующая</string>
+    <string name="buttonForward2">Другая</string>
+    <string name="buttonBack1">Закрыть</string>
+    <string name="buttonBack2">К первой</string>
+</resources>
