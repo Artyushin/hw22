@@ -18,16 +18,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final TextView textInfo = (TextView) findViewById(R.id.textViewPhoto);
-        textInfo.setText("http://myfile.org/1");
+        int rand = (int) ( Math.random() * 100 );
+        textInfo.setText("http://myfile.org/" + rand);
 
         Button buttonOK = (Button) findViewById(R.id.buttonForward);
         buttonOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, NewActivity.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);
-//                int rand = (int) ( Math.random() * 100 );
-//                textInfo.setText("http://myfile.org/" + rand);
             }
         });
 
